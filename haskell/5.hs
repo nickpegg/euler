@@ -1,6 +1,6 @@
 -- Fairly slow when ran in GHCI, not bad when compiled
 
-isGood x = 
+isGood x =
     let daMod = (mod) x
         mods = map daMod [1..20]
     in and (map (==0) mods)
