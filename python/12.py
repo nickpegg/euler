@@ -1,6 +1,6 @@
 #!/usr/bin/which python
 
-# I have no idea if this actually is complete. I wrote this a while ago
+# INCOMPLETE
 
 import math
 
