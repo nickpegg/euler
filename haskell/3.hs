@@ -1,6 +1,12 @@
--- NOT DONE
+-- Needs work
+-- While correct, too slow to find a solution in a reasonable amount of time
 
-clean x y = x `mod` y == 0
-dalist = filter (clean 7 == 0) [1..10]
+bigNum = 600851475143
 
---isPrime x = (length (filter ((mod) x == 0) [1..x])) == 0
+divBy x y = (x `mod` y) == 0
+factors x = filter (divBy x) [1..x]
+isPrime x = (length $ factors x) == 2
+
+primeFactors x = filter (isPrime) (factors x)
+
+doit = max $ primeFactors bigNum
